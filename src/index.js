@@ -2,7 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+// const db = firebase.database(); 
+// const _dbRef = db.ref();
+// let rowsB = [];
+
+//   _dbRef.child("1h5GOL1WIfNEOtcxJVFQ0x_bgJxsPN5zJgVJOePmgJOY").child("Jobs").get()
+//   .then(snapshot => snapshot.val())
+//   .then((value) => {
+//     console.log(value[0]);
+//     rowsB[0] = value[0];
+//     rowsB[1] = value[1];
+//   });
+
+// console.log(rowsB);
 
 ReactDOM.render(
   <React.StrictMode>
@@ -11,7 +23,5 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
