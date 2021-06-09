@@ -1,0 +1,113 @@
+ul {
+  list-style-type: none;
+  text-align: center;
+  columns: 3;
+}
+
+/* Global */
+
+:root {
+  --primary-color: #325288;
+}
+
+html,
+body {
+  background: #f4eee8;
+}
+
+#output {
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 128px;
+}
+
+/* Homepage */
+
+#home-screen .links {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 48px;
+}
+
+#home-screen .links a {
+  display: flex;
+  text-decoration: none;
+  background: rgba(50, 82, 136, 0.72);
+  color: #fff;
+  width: calc(100% - 16px);
+  margin: 8px;
+  height: 72px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
+
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  box-sizing: border-box;
+}
+
+#home-screen .links a:hover {
+  background: rgba(50, 82, 136, 0.96);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* Detail Screen */
+
+#detail-screen h2 {
+  text-align: center;
+}
+
+#detail-screen table {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+  padding: 16px;
+}
+
+#detail-screen table td {
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 12px 10px;
+}
+
+#detail-screen input#search-bar {
+  font-size: 24px;
+  font-family: arial;
+  margin-bottom: 24px;
+  height: 56px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+
+  border-radius: 4px;
+  padding: 0 16px;
+
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#detail-screen .stats {
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 4px;
+  padding: 16px 0;
+  margin-bottom: 48px;
+}
+
+#detail-screen .stats li {
+  padding: 16px;
+}
+
+#detail-screen .stats li b {
+  font-size: 32px;
+  display: block;
+  margin-top: 8px;
+}
+
+#detail-screen .controls,
+#detail-screen .controls button {
+  font-size: 24px;
+}

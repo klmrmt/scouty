@@ -14,18 +14,5 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 
-// const db = firebase.database(); 
-// const _dbRef = db.ref();
-// let rowsB = [];
 
-// _dbRef.child("1h5GOL1WIfNEOtcxJVFQ0x_bgJxsPN5zJgVJOePmgJOY").child("Jobs").get()
-// .then(snapshot => snapshot.val())
-// .then((value) => {
-//   console.log(value[0]);
-//   // TODO 
-//   // for loop through all the rows
-//   rowsB[0] = value[0];
-//   rowsB[1] = value[1];
-// });
-// console.log(rowsB.length)
 export default firebase;

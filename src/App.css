@@ -1,38 +1,144 @@
-.App {
-  text-align: center;
+#body {
+  background: #5060EB;
+  text-align: -webkit-center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#header {
+  min-width: 50%;
+  max-width: 75%;
+}
+#header-text {
+  padding-top: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media only screen and (max-width: 900px) {
+  #header-text {
+      text-align: right;
+  }
+
+  #header-image-container {
+    top: 240px;
+  }
+  #header-image { 
+    max-width:100%;
+    height:auto;
+  }
+  th:nth-child(4){
+      display:none;
+  }
+  td:nth-child(4){
+    display:none;
+  }
+  table{
+    width: 84%
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@media only screen and (min-width: 900px) {
+  #header-text {
+      text-align: right;
+      position: relative;
+      top: 240px;
+  }
+
+  #header-image-container {
+      text-align: left;
+  }
+  #header-image {
+    height: 250px;
+    width: auto;
+  }
+  table{
+    width: 76%
+  }
+}
+
+.input {
+  min-width: 67%;
+  max-width: 75%;
+  text-align: left;
+  height: 48px;
+  border-radius: 12px 0 0 12px;
+  border: none;
+  padding-left: 16px;
+}
+
+.submit {
+  min-width: 8%;
+  height: 50px;
+  border-radius: 0px 12px 12px 0px;
+  border: none;
+  background-color: #2C3690;
   color: white;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.tableHeader {
+  min-width: 50%;
+  max-width: 75%;
+  text-align: left;
+  padding: 15px;
+}
+#tableHeader-text {
+  color: white;
+  font-size: large;
+}
+#tableHeader-title {
+  color: white;
+  font-size: xx-large;
+  font-weight: bold;
+}
+#header-title {
+  color: white;
+  font-size: x-large;
+}
+#header-subtitle {
+  color: white;
+  font-size: xxx-large;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#table {
+  min-width: 50%;
+  max-width: 75%;
+}
+
+.footer {
+  min-width: 50%;
+  max-width: 75%;
+  text-align: right;
+  padding: 16px;
+}
+
+#Footer-credits{
+  color:white;
+}
+
+table {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+  padding: 16px;
+  border-radius: 16px;
+  text-align: left;
+  
+}
+
+table td {
+  background: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 16px 0px 16px 0px;
+  text-align: left;
+
+}
+table th{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0px 0px 16px 0px;
+}
+
+::placeholder {
+  /* color: black; */
+  margin: 8px;
+  font-size: 1.25em;
 }
