@@ -1,19 +1,21 @@
 #body {
   background: #5060EB;
   text-align: -webkit-center;
+  height: 100vh;
 }
 
 #header {
   min-width: 50%;
   max-width: 75%;
+  display: flex;
+  padding-top: 80px;
 }
-#header-text {
-  padding-top: 100px;
-}
+
 
 @media only screen and (max-width: 900px) {
   #header-text {
       text-align: right;
+      padding-top: 60px;
   }
 
   #header-image-container {
@@ -32,13 +34,25 @@
   table{
     width: 84%
   }
+  .submit {
+    min-width: 70%;
+    height: 50px;
+    border-radius: 12px 12px 12px 12px;
+    border: none;
+    background-color: #2C3690;
+    color: white;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+  }
 }
 
 @media only screen and (min-width: 900px) {
   #header-text {
       text-align: right;
       position: relative;
-      top: 240px;
+      padding-top: 60px;
   }
 
   #header-image-container {
@@ -50,6 +64,17 @@
   }
   table{
     width: 76%
+  }
+  .submit {
+    min-width:25%;
+    height: 50px;
+    border-radius: 12px 12px 12px 12px;
+    border: none;
+    background-color: #2C3690;
+    color: white;
+    font-weight: bold;
+    margin-top: 16px;
+  
   }
 }
 
@@ -63,15 +88,7 @@
   padding-left: 16px;
 }
 
-.submit {
-  min-width: 8%;
-  height: 50px;
-  border-radius: 0px 12px 12px 0px;
-  border: none;
-  background-color: #2C3690;
-  color: white;
-  font-weight: bold;
-}
+
 
 .tableHeader {
   min-width: 50%;

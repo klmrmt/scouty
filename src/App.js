@@ -44,13 +44,14 @@ class App extends React.Component {
     render(){
     const {joblist} = this.state;
     // console.log(joblist[0].datePosted)
-    if (joblist.length > 0) console.log(joblist[0].company);
+    if (joblist.length > 0) console.log(joblist[0].company); 
     return ( 
       <div id='body'>
         
 
         <Header />
-        <PhoneInput />
+        {/* <PhoneInput /> */}
+
         <TableHeader />
         <table id="example" class="display table">
               <thead class="thead-dark">
@@ -80,6 +81,7 @@ class App extends React.Component {
               </tbody>
               
            </table>
+
         <Footer />
       </div>
       
