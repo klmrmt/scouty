@@ -4,9 +4,9 @@ import image from "../images/image.svg";
 function Header(){
     return (
         <div id='header'>
-            <div id='header-image-container'>
+            {/* <div id='header-image-container'>
                 <img id = 'header-image' src={image} alt="test" />
-            </div>
+            </div> */}
             <div id='header-text'>
                 <span id='header-title'>
                     We couldn't find any jobs <br />
@@ -17,11 +17,13 @@ function Header(){
                     Scout.
                 </span>
                 <br/>
-                <input
-                    className="submit"
-                    type="submit"
-                    value="Subscribe to Newsletter"
-                /> 
+                <form>
+                    <input
+                        className="submit"
+                        type="submit"
+                        value="Subscribe to Newsletter"
+                    /> 
+                </form>
             </div>   
         
 
