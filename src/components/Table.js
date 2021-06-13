@@ -1,53 +1,44 @@
-import React from 'react';
-// import { makeStyles } from '@material-ui/core/styles';
-// import Table from '@material-ui/core/Table';
-// import TableBody from '@material-ui/core/TableBody';
-// import TableCell from '@material-ui/core/TableCell';
-// import TableContainer from '@material-ui/core/TableContainer';
-// import TableHead from '@material-ui/core/TableHead';
-// import TableRow from '@material-ui/core/TableRow';
-// import Paper from '@material-ui/core/Paper';
- 
-// const useStyles = makeStyles({
-//     table: {
-//       minWidth: 650,
-//     },
-// });
-
+import { FirebaseTablePull } from './firebaseTablePull';
+import TableHeader from './TableHeader.js';
+import Footer from './Footer.js';
 
 export default function SimpleTable() {
-//   const classes = useStyles();
-//   const joblist = this.props.jobsList;
-//   {console.log(this.props)}
+  let job = FirebaseTablePull();
 
   return ( 
-      <div>
-        {/* hello {this.props} */}
-      </div>
-    // <TableContainer id= "table" component={Paper}>
-    //   {/* <Table className={classes.table} aria-label="simple table"> */}
-    //   <Table aria-label="simple table">
-    //     <TableHead>
-    //       <TableRow>
-    //         <TableCell>Company</TableCell>
-    //         <TableCell>Location</TableCell>
-    //         <TableCell>Position</TableCell>
-    //         <TableCell>Date Posted</TableCell>
-    //       </TableRow>
-    //     </TableHead>
-        
-    //     <TableBody>
-    //       {this.state.joblist.map((row) => (
-    //         <TableRow>
-    //           <TableCell>{row.company}</TableCell>
-    //           <TableCell>{row.location}</TableCell>
-    //           <TableCell>{row.position}</TableCell>
-    //           <TableCell>{row.datePosted}</TableCell>
-    //         </TableRow>
-    //       ))}
-    //     </TableBody>
-    //   </Table>
-    // </TableContainer>
+
+    <section id='table'>
+    <TableHeader />
+    <table class="table">
+          <thead class="thead-dark">
+              <tr>
+                  <th>Company</th>
+                  <th>Location</th>
+                  <th>Position</th>
+                  <th>Date Posted</th>
+              </tr>
+          </thead>
+          <tbody>
+          {job.map(data => {
+              
+              return (
+                  <tr>     
+                  <td>{data.company}</td>
+                  <td>{data.location}</td>
+                  <td>{data.position}</td>
+                  <td>{data.datePosted}</td>
+                  </tr>
+                  
+              );
+            
+              })}
+      
+            
+          </tbody>
+          
+      </table>
+    <Footer />
+    </section>
   );
   
   

@@ -1,0 +1,181 @@
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+  #header-title {
+    color: white;
+    font-size: 24px;
+  }
+  #header-text {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  th:nth-child(4){
+    display:none;
+  }
+  td:nth-child(4){
+    display:none;
+  }
+  td{
+    font-size: 12px;
+  }
+  table{
+    width: 100%;
+  }
+  .submit {
+    min-width: 70%;
+    height: 50px;
+    border-radius: 12px 12px 12px 12px;
+    border: none;
+    background-color: #2C3690;
+    color: white;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  input {
+    font-size: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+  input {
+    font-size: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  th:nth-child(4){
+    display:none;
+  }
+  td:nth-child(4){
+    display:none;
+  }
+  table {
+    min-width: 76%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+  #header-title {
+    color: white;
+    font-size: 36px;
+  }
+  #header-text {
+      text-align: center;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  th:nth-child(4){
+    display: block;
+  }
+  td:nth-child(4){
+    display: block;
+  }
+  table{
+    width: 76%
+  }
+  .submit {
+    min-width:25%;
+    height: 50px;
+    border-radius: 12px 12px 12px 12px;
+    border: none;
+    background-color: #2C3690;
+    color: white;
+    font-weight: bold;
+    margin-top: 16px;
+  
+  }
+  input {
+    font-size: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width: 992px) { 
+  #header-title {
+    color: white;
+    font-size: 36px;
+  }
+  #header-text {
+      text-align: center;
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+  th:nth-child(4){
+    display: block;
+  }
+  td:nth-child(4){
+    display: block;
+  }
+  table{
+    width: 76%
+  }
+  .submit {
+    min-width:25%;
+    height: 50px;
+    border-radius: 12px 12px 12px 12px;
+    border: none;
+    background-color: #2C3690;
+    color: white;
+    font-weight: bold;
+    margin-top: 16px;
+  
+  }
+  input {
+    font-size: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  #scroll {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -124%;
+  }
+  #scroll-text {
+    padding-bottom: 16px;
+    color: white;
+    font-size: 16px;
+  }
+}
+
+
+
+
+
+
+
+// constructor(props) {
+      
+  //     super(props);
+    
+  //     this.state = {joblist : []}
+  //   }
+      
+  //   componentDidMount() {
+  //     firebase.database().ref("1h5GOL1WIfNEOtcxJVFQ0x_bgJxsPN5zJgVJOePmgJOY/Jobs").on("value", snapshot => {
+  //       let jobs = [];
+  //       snapshot.forEach(snap => {
+  //           // snap.val() is the dictionary with all your keys/values from the 'students-list' path
+  //           jobs.push(snap.val());
+  //       });
+  //       this.setState({ joblist: jobs });
+  //     });
+
+  //   }
+
+
+  // const {joblist} = this.state;
+    // const jobListLength = joblist.length;
+    // if (joblist.length > 0) console.log(joblist[0].company); 

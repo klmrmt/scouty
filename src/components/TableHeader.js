@@ -1,11 +1,14 @@
 import React from "react";
 import firebase from 'firebase';
+import {FirebaseTablePull} from './firebaseTablePull'
 
-function TableHeader() {
+function TableHeader(props) {
+    const jobListLength = FirebaseTablePull().length;
+
     return (
-        <div className='tableHeader'>
+        <div id='jobs' className='tableHeader'>
             <span id='tableHeader-title'>
-                4 positions open
+              {jobListLength} positions open
             </span> 
             <br />
             <span id='tableHeader-text'>
