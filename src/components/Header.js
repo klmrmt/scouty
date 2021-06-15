@@ -11,7 +11,7 @@ function Header(){
                 </span>
                 <br />
                 <span id="header-subtitle">
-                    Scout.
+                    Only Jobs.
                 </span>
                 <br/>
                 <form>

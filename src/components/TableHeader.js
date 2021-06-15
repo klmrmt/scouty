@@ -1,21 +1,29 @@
-import React from "react";
+import React, { Component } from 'react';
 import firebase from 'firebase';
-import {FirebaseTablePull} from './firebaseTablePull'
+// import {FirebaseTablePull} from './firebaseTablePull'
 
-function TableHeader(props) {
-    const jobListLength = FirebaseTablePull().length;
 
+class TableHeader extends Component {
+
+    constructor(props){
+        super(props);
+    }
+
+
+  render() {
+      console.log(this.props)
     return (
         <div id='jobs' className='tableHeader'>
             <span id='tableHeader-title'>
-              {jobListLength} positions open
+              {this.props.count} positions open
             </span> 
             <br />
             <span id='tableHeader-text'>
-                Last Updated 6/8/2021
+                Last Updated {this.props.date}
             </span> 
         </div>
-    )
+    );
+  }
 }
 
 export default TableHeader;
