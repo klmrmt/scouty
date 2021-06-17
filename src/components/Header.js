@@ -1,9 +1,11 @@
 import React from "react";
 import image from "../images/Arrow.svg";
+import Navbar from './navbar';
 
 function Header(){
     return (
         <div id='header'>
+            {/* <Navbar/> */}
             <div id='header-text'>
                 <span id='header-title'>
                     We couldn't find any jobs <br />
