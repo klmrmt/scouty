@@ -5,6 +5,7 @@ import TableHeader from './components/TableHeader.js';
 import Footer from './components/Footer.js';
 import Login from './components/Login.js';
 import Table from './components/Table.js';
+
 import './App.css';
 
 const Home = () => {
@@ -13,7 +14,6 @@ const Home = () => {
 
     const [user, setUser] = useState(null);
     let auth = firebase.auth();
-
     let jobs = [];
     // go through firebase, fetch table data
     useEffect(() => {
@@ -29,6 +29,7 @@ const Home = () => {
     // check if logged in
     useEffect(() => {
         const unsubscribe = auth.onAuthStateChanged(userAuth => {
+            console.log(userAuth)
             const user = {
                 uid: userAuth.uid,
                 email: userAuth.email
@@ -94,12 +95,11 @@ const Home = () => {
     }
     return (
         <div id='body'>
-            {user ? <button onClick={handleLogout}>logout</button> : <div><Login auth={auth} /></div>}
             <Header />
             <section id='table'>
                 <TableHeader count={jobListLength} date={currDate} />
                 <Table jobs={joblist} count={jobListLength} />
-                <Table jobs={userJoblist} count={userJobListLength} />
+                {/* <Table jobs={userJoblist} count={userJobListLength} /> */}
 
                 <Footer />
             </section>

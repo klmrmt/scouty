@@ -16,12 +16,12 @@ button {
   text-align: right;
   margin-left: 0.5%;
   margin-right: 0.5%;
-  text-align: right;
 }
 #buttonGroup {
   text-align: right;
   max-width: 76%;
 }
+
 /* ********************Header Start************************************ */
 #header {
   height: 100vh;
@@ -46,7 +46,6 @@ button {
   margin-top: 16px;
   margin-bottom: 16px;
 } 
-
 /* ********************Header End************************************ */
 
 
@@ -90,6 +89,29 @@ table th{
   padding: 16px 2px 16px 2px;
 }
 /* ********************Table End************************************ */
+
+/* ********************Navbar Start************************************ */
+.topnav {
+  overflow: hidden;
+  text-align: right;
+  width: 76%;
+}
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 25px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.topnav a:hover {
+  color: #2C3690;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+/* ********************Navbar end************************************** */
+
 
 
 

@@ -1,11 +1,10 @@
 import React from "react";
 import image from "../images/Arrow.svg";
-import Navbar from './navbar';
+import Navbar from "./Navbar";
 
-function Header(){
+const Header = () => {
     return (
         <div id='header'>
-            {/* <Navbar/> */}
             <div id='header-text'>
                 <span id='header-title'>
                     We couldn't find any jobs <br />
@@ -15,13 +14,13 @@ function Header(){
                 <span id="header-subtitle">
                     Only Jobs.
                 </span>
-                <br/>
+                <br />
                 <form>
                     <input
                         className="submit"
                         type="submit"
                         value="Subscribe to Newsletter"
-                    /> 
+                    />
                 </form>
             </div>
             <div id='scroll'>
@@ -29,11 +28,9 @@ function Header(){
                     See Jobs
                 </div>
                 <a href="#jobs">
-                    <div id='wrapper-image'>
-                        <img id='arrow-image' src={image} alt="Scroll" />
-                    </div>
+                    <img id='arrow-image' src={image} alt="Scroll" />
                 </a>
-            </div>   
+            </div>
         </div>
     );
 }

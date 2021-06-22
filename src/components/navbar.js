@@ -1,26 +1,28 @@
-import React, { Component, useEffect, setState } from 'react';
+import React, { Component, useEffect, useState  } from 'react';
+import Login from './Login.js';
 
-class Navbar extends Component {
+const Navbar = () => {
+  const [clicked, setClicked] = useState(0);
 
-
-  handleClick = (e) => {
-    e.preventDefault();
-    console.log('The link was clicked.');
-  };
-
-  render() {
-    return (
-        <div>
-            <ul id='nav'>
-                <li>
-                    <a href="#" onClick={this.handleClick}>Log in</a>
-                </li>
-                <li>
-                    <a href="#">Sign up</a>
-                </li>
-            </ul>
-        </div>
-    );
+  const handleClick = () => {
+    if(clicked){
+      setClicked(0);
+    }  else {
+      setClicked(1);
+    }
+    console.log(clicked)
   }
+  
+  return (
+    <div class="topnav">
+      {/* {user ? <button onClick={handleLogout}>logout</button> : <div>login</div>} */}
+
+      <button onClick={handleClick}>logout</button>
+      {clicked ? <div></div>: <Login />}
+         
+      <a onClick={handleClick} href="#">Signup</a>
+    </div>
+  );
 }
+
 export default Navbar;

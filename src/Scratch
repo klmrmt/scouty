@@ -375,3 +375,12 @@ export default PhoneInput;
 
 
 "1h5GOL1WIfNEOtcxJVFQ0x_bgJxsPN5zJgVJOePmgJOY/Jobs"
+
+
+
+
+
+
+
+
+            {user ? <button onClick={handleLogout}>logout</button> : <div><Login auth={auth} /></div>}
